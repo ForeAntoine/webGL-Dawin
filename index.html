@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src='gl-matrix-min.js'></script>
+  </head>
+   <body onload='main()'>
+       <canvas id='dawin-webgl' width=800 height=800>
+         Utilisez un navigateur compatible avec WebGL
+       </canvas>
+       <div id="settings">
+          <h1>SETTINGS</h1>
+          <div>
+            <h2>Translation</h2>
+            <div class="slidecontainer">
+              <label for="tx">tx</label>
+              <input type="range" min="-10" max="10" value="0" class="slider" id="tx">
+            </div>
+            <div class="slidecontainer">
+                <label for="ty">ty</label>
+                <input type="range" min="-10" max="10" value="0" class="slider" id="ty">
+            </div>
+            <div class="slidecontainer">
+              <label for="tz">tz</label>
+              <input type="range" min="-10" max="10" value="0" class="slider" id="tz">
+          </div>
+          </div>
+          <div>
+            <h2>Rotation</h2>
+            <div class="slidecontainer">
+              <label for="rx">rx</label>
+              <input type="range" min="-314" max="314" value="0" class="slider" id="rx">
+            </div>
+            <div class="slidecontainer">
+              <label for="ry">ry</label>
+              <input type="range" min="-314" max="314" value="0" class="slider" id="ry">
+            </div>
+            <div class="slidecontainer">
+              <label for="rz">rz</label>
+              <input type="range" min="-314" max="314" value="0" class="slider" id="rz">
+            </div>
+          </div>
+          <div>
+            <h2>Camera</h2>
+            <div class="slidecontainer">
+              <label for="zoom">zoom</label>
+              <input type="range" min="15" max="30" value="10" class="slider" id="zoom">
+            </div>
+            <div class="slidecontainer">
+              <label for="fov">perspective</label>
+              <input type="range" min="0" max="10" value="0" class="slider" id="fov">
+            </div>
+          </div>
+       </div>
+       <script src='script.js'></script>
+   </body>
+</html>	
